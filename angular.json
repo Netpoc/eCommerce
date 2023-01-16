@@ -26,11 +26,22 @@
             "assets": [
               "src/favicon.ico",
               "src/assets"
+              
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/css/main.css",
+              "src/assets/css/plugins/animate.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/main.js",
+              "assets/js/vendor/modernizr-3.6.0.min.js",
+              "assets/js/vendor/jquery-3.6.0.min.js",
+              "assets/js/vendor/jquery-migrate-3.3.0.min.js",
+              "assets/js/vendor/bootstrap.bundle.min.js",
+              "assets/js/main.js",
+              "assets/js/shop.js"
+            ]
           },
           "configurations": {
             "production": {
