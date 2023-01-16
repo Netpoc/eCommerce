@@ -35,12 +35,27 @@
             ],
             "scripts": [
               "src/assets/js/main.js",
-              "assets/js/vendor/modernizr-3.6.0.min.js",
-              "assets/js/vendor/jquery-3.6.0.min.js",
-              "assets/js/vendor/jquery-migrate-3.3.0.min.js",
-              "assets/js/vendor/bootstrap.bundle.min.js",
-              "assets/js/main.js",
-              "assets/js/shop.js"
+              "src/assets/js/vendor/modernizr-3.6.0.min.js",
+              "src/assets/js/vendor/jquery-3.6.0.min.js",
+              "src/assets/js/vendor/jquery-migrate-3.3.0.min.js",
+              "src/assets/js/vendor/bootstrap.bundle.min.js",
+              "src/assets/js/main.js",
+              "src/assets/js/shop.js",
+              "src/assets/js/plugins/slick.js",
+              "src/assets/js/plugins/jquery.syotimer.min.js",
+              "src/assets/js/plugins/waypoints.js",
+              "src/assets/js/plugins/wow.js",
+              "src/assets/js/plugins/perfect-scrollbar.js",
+              "src/assets/js/plugins/magnific-popup.js",
+              "src/assets/js/plugins/select2.min.js",
+              "src/assets/js/plugins/counterup.js",
+              "src/assets/js/plugins/jquery.countdown.min.js",
+              "src/assets/js/plugins/images-loaded.js",
+              "src/assets/js/plugins/isotope.js",
+              "src/assets/js/plugins/scrollup.js",
+              "src/assets/js/plugins/jquery.vticker-min.js",
+              "src/assets/js/plugins/jquery.theia.sticky.js",
+              "src/assets/js/plugins/jquery.elevatezoom.js"
             ]
           },
           "configurations": {

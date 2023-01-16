@@ -1178,11 +1178,11 @@ button.submit:hover, button[type='submit']:hover {
 }
 
 .btn.btn-brush.btn-brush-1, .button.btn-brush.btn-brush-1 {
-  background-image: url(../images/theme/btn-brush-bg-1.png);
+  background-image: url(../assets/images/theme/btn-brush-bg-1.png);
 }
 
 .btn.btn-brush.btn-brush-2, .button.btn-brush.btn-brush-2 {
-  background-image: url(../images/theme/btn-brush-bg-2.png);
+  background-image: url(../assets/images/theme/btn-brush-bg-2.png);
 }
 
 .btn.btn-brush.btn-brush-3, .button.btn-brush.btn-brush-3 {
