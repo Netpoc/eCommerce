@@ -31,7 +31,12 @@
             "styles": [
               "src/styles.scss",
               "src/assets/css/main.css",
-              "src/assets/css/plugins/animate.min.css"
+              "src/assets/css/plugins/animate.min.css",
+              "src/assets/css/vendors/bootstrap.min.css",
+              "src/assets/css/vendors/bootstrap.rlt.min.css",
+              "src/assets/css/vendors/normalize.css",
+              "src/assets/css/vendors/unicons-regular-straight.css"
+              
             ],
             "scripts": [
               "src/assets/js/main.js",
