@@ -1,31 +1,4 @@
-/***
- Theme Name: Nest
- Description: Grocery, Super Market, eCommerce HTML Template
- Version: 5.6
- License: GNU General Public License v2 or later
- License URI: http://www.gnu.org/licenses/gpl-2.0.html
-==============================
-TABLE CONTENT
- Import Bunny Fonts
- Include Third Party CSS Library
- GENERAL
- HEADER
- Offcanvas Sidebar
- Search form
- Main header
- Mega menu
- Header layouts
- Page layouts
- Pagination
- Breadcrumb
- CATEGORY PAGES
- SINGLE POST
- Author box
- comment
- Post share social
- WP STYPE
- Custom amine
-***/
+
 @import url(https://fonts.bunny.net/css?family=lato:400,700,900|quicksand:400,500,600,700);
 /*import vendors*/
 @import url(vendors/normalize.css);
@@ -1178,11 +1151,11 @@ button.submit:hover, button[type='submit']:hover {
 }
 
 .btn.btn-brush.btn-brush-1, .button.btn-brush.btn-brush-1 {
-  background-image: url(../assets/images/theme/btn-brush-bg-1.png);
+  background-image: url(../images/theme/btn-brush-bg-1.png);
 }
 
 .btn.btn-brush.btn-brush-2, .button.btn-brush.btn-brush-2 {
-  background-image: url(../assets/images/theme/btn-brush-bg-2.png);
+  background-image: url(../images/theme/btn-brush-bg-2.png);
 }
 
 .btn.btn-brush.btn-brush-3, .button.btn-brush.btn-brush-3 {
@@ -2228,7 +2201,7 @@ input.qty-val {
 }
 
 .home-slider.style-2 {
-  background: url(../images/banner/banner-12.png) no-repeat center bottom;
+  background: url(../imgs/banner/banner-12.png) no-repeat center bottom;
   background-size: cover;
   width: 100%;
   padding: 50px 0;
@@ -3486,7 +3459,7 @@ table .product-thumbnail img {
   border-radius: 15px;
   overflow: hidden;
   height: 520px;
-  background: url(../images/banner/banner-4.png) no-repeat center bottom;
+  background: url(../imgs/banner/banner-4.png) no-repeat center bottom;
   background-size: cover;
   width: 100%;
 }
@@ -3501,7 +3474,7 @@ table .product-thumbnail img {
   border-radius: 15px;
   overflow: hidden;
   height: 538px;
-  background: url(../images/banner/banner-11.png) no-repeat center bottom;
+  background: url(../imgs/banner/banner-11.png) no-repeat center bottom;
   background-size: cover;
   width: 100%;
 }
@@ -3692,7 +3665,7 @@ table .product-thumbnail img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: url(../images/page/home-6-bg.jpg) no-repeat center center;
+  background: url(../imgs/page/home-6-bg.jpg) no-repeat center center;
   background-size: cover;
   height: 330px;
 }
@@ -3709,7 +3682,7 @@ table .product-thumbnail img {
   border: 0;
   border-radius: 50px 0 0 50px;
   padding-left: 58px;
-  background: url(../images/theme/icons/icon-search.png) no-repeat 25px center;
+  background: url(../imgs/theme/icons/icon-search.png) no-repeat 25px center;
 }
 
 .hero-3 form button {
@@ -3813,7 +3786,7 @@ table .product-thumbnail img {
   z-index: 100;
   position: relative;
   color: #fff;
-  background: url(../images/page/about-9.png) no-repeat center center;
+  background: url(../imgs/page/about-9.png) no-repeat center center;
   border-radius: 15px;
   padding: 100px 0;
   overflow: hidden;
@@ -4262,11 +4235,9 @@ table .product-thumbnail img {
   display: inline-block;
   padding: 6px 20px 6px 20px;
   border-radius: 4px;
-  background-color: #FFE6E6;
+  background-color: #DEF9EC;
   font-size: 14px;
   font-weight: 700;
-  border-color: #FBB03B;
-  color: #FBB03B;
 }
 
 .product-cart-wrap .product-card-bottom .add-cart .add:hover {
@@ -4966,7 +4937,7 @@ table .product-thumbnail img {
 }
 
 .product-rate {
-  background-image: url("../images/theme/rating-stars.png");
+  background-image: url("../imgs/theme/rating-stars.png");
   background-position: 0 -12px;
   background-repeat: repeat-x;
   height: 12px;
@@ -4978,7 +4949,7 @@ table .product-thumbnail img {
 .product-rating {
   height: 12px;
   background-repeat: repeat-x;
-  background-image: url("../images/theme/rating-stars.png");
+  background-image: url("../imgs/theme/rating-stars.png");
   background-position: 0 0;
 }
 
@@ -5125,7 +5096,7 @@ table .product-thumbnail img {
 }
 
 .stock-status.in-stock {
-  background: #FFE6E6;
+  background: #DEF9EC;
   color: #FBB03B;
 }
 
@@ -5658,7 +5629,7 @@ table.no-border td, table.no-border th, table.no-border thead {
 .apply-coupon input {
   height: 51px;
   border-radius: 10px 0 0 10px;
-  background-image: url("../images/theme/icons/coupon.png");
+  background-image: url("../imgs/theme/icons/coupon.png");
   background-position: 20px center;
   background-repeat: no-repeat;
   padding-left: 50px;
@@ -5700,7 +5671,7 @@ table.no-border td, table.no-border th, table.no-border thead {
 
 /*BLOG*/
 .archive-header {
-  background: url(../images/blog/header-bg.png) no-repeat center center;
+  background: url(../imgs/blog/header-bg.png) no-repeat center center;
   border-radius: 20px;
   padding: 70px 80px;
   background-size: cover;
@@ -6636,7 +6607,7 @@ h6.post-title {
 }
 
 .invoice-1 .invoice-header {
-  background: rgba(0, 0, 0, 0.04) url(../images/invoice/header-bg-1.png) top left repeat;
+  background: rgba(0, 0, 0, 0.04) url(../imgs/invoice/header-bg-1.png) top left repeat;
 }
 
 .invoice-2 .invoice-info {
@@ -6648,7 +6619,7 @@ h6.post-title {
 }
 
 .invoice-3 .invoice-header {
-  background: url(../images/invoice/header-bg-2.jpg) top left no-repeat;
+  background: url(../imgs/invoice/header-bg-2.jpg) top left no-repeat;
   background-size: cover;
   padding: 50px 150px;
   color: #fff;
@@ -6810,7 +6781,7 @@ h6.post-title {
   display: inline-block;
   padding: 6px 20px 6px 20px;
   border-radius: 4px;
-  background-color: #FFE6E6;
+  background-color: #DEF9EC;
   font-size: 14px;
   font-weight: 700;
   color: #FBB03B;
@@ -6866,7 +6837,7 @@ h6.post-title {
   display: inline-block;
   padding: 6px 20px 6px 20px;
   border-radius: 4px;
-  background-color: #FFE6E6;
+  background-color: #DEF9EC;
   font-size: 14px;
   font-weight: 700;
   color: #FBB03B;
@@ -7607,7 +7578,7 @@ h6.post-title {
   width: 100%;
   max-width: 683px;
   font-size: 14px;
-  background-image: url(../images/theme/icons/search.png);
+  background-image: url(../imgs/theme/icons/search.png);
   background-repeat: no-repeat;
   background-position: center right;
   padding-left: 0;
@@ -7785,7 +7756,7 @@ h6.post-title {
   border: none;
   width: 26px;
   height: 26px;
-  background-color: #FFE6E6;
+  background-color: #DEF9EC;
   border-radius: 30px;
 }
 
@@ -9212,7 +9183,7 @@ span.fi-rs-apps {
 }
 
 .price_range {
-  background: url(../images/banner/fillter-widget-bg.png) no-repeat right bottom;
+  background: url(../imgs/banner/fillter-widget-bg.png) no-repeat right bottom;
   background-size: 150px;
 }
 
@@ -9563,7 +9534,7 @@ footer .hotline img {
 }
 
 .newsletter .newsletter-inner {
-  background: url(../images/banner/banner-10.png) no-repeat center;
+  background: url(../imgs/banner/banner-10.png) no-repeat center;
   background-size: cover;
   padding: 84px 78px;
   clear: both;
@@ -9597,7 +9568,7 @@ footer .hotline img {
   border: 0;
   border-radius: 50px 0 0 50px;
   padding-left: 58px;
-  background: url(../images/theme/icons/icon-plane.png) no-repeat 25px center;
+  background: url(../imgs/theme/icons/icon-plane.png) no-repeat 25px center;
 }
 
 .newsletter .newsletter-inner .newsletter-content form button {
