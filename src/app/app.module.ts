@@ -14,6 +14,7 @@ import { CartComponent } from './components/marketplace/cart/cart.component';
 import { CheckoutComponent } from './components/marketplace/checkout/checkout.component';
 import { ForgottenPasswordComponent } from './components/auth/forgotten-password/forgotten-password.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,6 +27,7 @@ import { ForgottenPasswordComponent } from './components/auth/forgotten-password
     CartComponent,
     CheckoutComponent,
     ForgottenPasswordComponent
+    
   ],
   imports: [
     BrowserModule,

@@ -7,7 +7,7 @@ import { ProductsApiService } from 'src/app/services/network-calls/products-api.
   styleUrls: ['./products-listing.component.scss']
 })
 export class ProductsListingComponent implements OnInit {
-  products = [];
+  allProducts = [];
 
   constructor(
     private productApiService: ProductsApiService
@@ -18,7 +18,7 @@ export class ProductsListingComponent implements OnInit {
   }
   private getProduct() {
     this.productApiService.getProducts().subscribe((res: any) => {
-      this.products = res.products;
+      this.allProducts = res.products;
       console.log(res.products)
     })
   }

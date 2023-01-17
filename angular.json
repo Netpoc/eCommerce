@@ -36,7 +36,11 @@
             ],
             "scripts": [
               "src/assets/js/main.js",
-              "src/assets/js/vendor/bootstrap.bundle.min.js"             
+              "src/assets/js/vendor/bootstrap.bundle.min.js",
+              "src/assets/js/vendor/jquery-3.6.0.min.js",
+              "src/assets/js/vendor/jquery-migrate-3.3.0.min.js",
+              "src/assets/js/plugins/jquery.countdown.min.js",
+              "src/assets/js/plugins/jquery.elevatezoom.js"             
             ]
           },
           "configurations": {

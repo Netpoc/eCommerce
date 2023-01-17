@@ -104,11 +104,11 @@
       </ul>
     </div>
     <div class="row product-grid-4">
-<div class="col-lg-1-5 col-md-4 col-12 col-sm-6" *ngFor="let product of products">
+<div class="col-lg-1-5 col-md-4 col-12 col-sm-6" *ngFor="let product of allProducts">
   <div class="product-cart-wrap mb-30">
     <div class="product-img-action-wrap">
       <div class="product-img product-img-zoom">
-        <a href="shop-product-right.html">
+        <a [routerLink]="['/products',product?.id ]">
           <img
             class="default-img"
             [src]="product?.thumbnail"
@@ -116,7 +116,7 @@
           />
           <img
             class="hover-img"
-            src="assets/images/shop/Old_Layer-2.jpg"
+            src="assets/images/shop/Old_Layer.jpg"
             alt="Old Layer Chicken"
           />
         </a>
