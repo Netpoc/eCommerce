@@ -10,7 +10,7 @@ import { RegisterComponent } from './components/auth/register/register.component
 import { LoginComponent } from './components/auth/login/login.component';
 import { ProductsListingComponent } from './components/marketplace/products-listing/products-listing.component';
 import { ProductDetailComponent } from './components/marketplace/product-detail/product-detail.component';
-import { CartComponent } from './components/marketplace/cart/cart.component';
+
 import { CheckoutComponent } from './components/marketplace/checkout/checkout.component';
 import { ForgottenPasswordComponent } from './components/auth/forgotten-password/forgotten-password.component';
 
@@ -23,11 +23,9 @@ import { ForgottenPasswordComponent } from './components/auth/forgotten-password
     RegisterComponent,
     LoginComponent,
     ProductsListingComponent,
-    ProductDetailComponent,
-    CartComponent,
+    ProductDetailComponent,    
     CheckoutComponent,
-    ForgottenPasswordComponent
-    
+    ForgottenPasswordComponent    
   ],
   imports: [
     BrowserModule,

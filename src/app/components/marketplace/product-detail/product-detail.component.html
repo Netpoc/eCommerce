@@ -1,16 +1,16 @@
 <!--End header-->
-<main class="main">
+<main class="main" *ngIf="productDetails">
     <div class="page-header breadcrumb-wrap">
         <div class="container">
             <div class="breadcrumb">
                 <a href="index.html" rel="nofollow"><i class="fi-rs-home mr-5"></i>Home</a>
-                <span></span> <a href="shop-grid-right.html">Vegetables & tubers</a> <span></span> Seeds of Change Organic
+                <span></span> <a href="shop-grid-right.html">{{productDetails.category}}</a> <span></span> {{productDetails.brand}}
             </div>
         </div>
     </div>
     <div class="container mb-30">
         <div class="row">
-            <div class="col-xl-11 col-lg-12 m-auto" *ngIf="productDetails">
+            <div class="col-xl-11 col-lg-12 m-auto">
                 <div class="row">
                     <div class="col-xl-9">
                         <div class="product-detail accordion-detail">
@@ -31,7 +31,7 @@
                                 <div class="col-md-6 col-sm-12 col-xs-12">
                                     <div class="detail-info pr-30 pl-30" >
                                         <span class="stock-status out-stock"> Sale Off </span>
-                                        <h2 class="title-detail">{{productDetails.description}}</h2>
+                                        <h2 class="title-detail">{{productDetails.title}}</h2>
                                         <div class="product-detail-rating">
                                             <div class="product-rate-cover text-end">
                                                 <div class="product-rate d-inline-block">
@@ -42,26 +42,16 @@
                                         </div>
                                         <div class="clearfix product-price-cover">
                                             <div class="product-price primary-color float-left">
-                                                <span class="current-price text-brand">N38</span>
+                                                <span class="current-price text-brand">N{{productDetails.price}}</span>
                                                 <span>
-                                                    <span class="save-price font-md color3 ml-15">26% Off</span>
-                                                    <span class="old-price font-md ml-15">N52</span>
+                                                    <span class="save-price font-md color3 ml-15">{{productDetails.discountPercentage}}% Off</span>
                                                 </span>
                                             </div>
                                         </div>
                                         <div class="short-desc mb-30">
-                                            <p class="font-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam rem officia, corrupti reiciendis minima nisi modi, quasi, odio minus dolore impedit fuga eum eligendi.</p>
+                                            <p class="font-lg">{{productDetails.description}}</p>
                                         </div>
-                                        <div class="attr-detail attr-size mb-30">
-                                            <strong class="mr-10">Size / Weight: </strong>
-                                            <ul class="list-filter size-filter font-small">
-                                                <li><a href="#">50g</a></li>
-                                                <li class="active"><a href="#">60g</a></li>
-                                                <li><a href="#">80g</a></li>
-                                                <li><a href="#">100g</a></li>
-                                                <li><a href="#">150g</a></li>
-                                            </ul>
-                                        </div>
+                                        
                                         <div class="detail-extralink mb-50">
                                             <div class="detail-qty border radius">
                                                 <a href="#" class="qty-down"><i class="fi-rs-angle-small-down"></i></a>
@@ -74,18 +64,7 @@
                                                 <a aria-label="Compare" class="action-btn hover-up" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
                                             </div>
                                         </div>
-                                        <div class="font-xs">
-                                            <ul class="mr-50 float-start">
-                                                <li class="mb-5">Type: <span class="text-brand">Organic</span></li>
-                                                <li class="mb-5">MFG:<span class="text-brand"> Jun 4.2022</span></li>
-                                                <li>LIFE: <span class="text-brand">70 days</span></li>
-                                            </ul>
-                                            <ul class="float-start">
-                                                <li class="mb-5">SKU: <a href="#">FWM15VKT</a></li>
-                                                <li class="mb-5">Tags: <a href="#" rel="tag">Snack</a>, <a href="#" rel="tag">Organic</a>, <a href="#" rel="tag">Brown</a></li>
-                                                <li>Stock:<span class="in-stock text-brand ml-5">8 Items In Stock</span></li>
-                                            </ul>
-                                        </div>
+                                        
                                     </div>
                                     <!-- Detail Info -->
                                 </div>
