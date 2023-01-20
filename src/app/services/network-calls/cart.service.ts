@@ -1,13 +1,23 @@
 import { Injectable } from '@angular/core';
-
+import { HttpClient } from '@angular/common/http';
+import { Product } from 'src/app/components/marketplace/products-listing/products-listing.component';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CartService {
-  items: any[] = [];
+  items: Product[] = [];
 
-  addToCart(product: any){
+  
+  public get numberOfItems() : number {
+    return this.items.length;
+  }  
+
+  constructor(
+    private http: HttpClient
+  ) { }
+
+  addToCart(product: Product){
     this.items.push(product);
   }
 

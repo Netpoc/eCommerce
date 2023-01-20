@@ -107,9 +107,18 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/css/plugins/animate.min.css",
+              "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css",
+              "https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/css/flat-ui.min.css"
+              
+
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/plugins/jquery.countdown.min.js",
+              "src/assets/js/vendor/jquery-migrate-3.3.0.min.js",
+              "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.js"
+            ]
           }
         }
       }

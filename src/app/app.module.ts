@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {HttpClientModule} from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +15,9 @@ import { ProductDetailComponent } from './components/marketplace/product-detail/
 
 import { CheckoutComponent } from './components/marketplace/checkout/checkout.component';
 import { ForgottenPasswordComponent } from './components/auth/forgotten-password/forgotten-password.component';
+import { RouterModule } from '@angular/router';
+import { CartComponent } from './components/marketplace/cart/cart.component';
+
 
 
 @NgModule({
@@ -25,12 +30,20 @@ import { ForgottenPasswordComponent } from './components/auth/forgotten-password
     ProductsListingComponent,
     ProductDetailComponent,    
     CheckoutComponent,
-    ForgottenPasswordComponent    
+    ForgottenPasswordComponent,
+    CartComponent
+     
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot([
+      {path: '', component: ProductsListingComponent},
+      {path: 'products/:id', component: ProductDetailComponent},
+      {path: 'cart', component: CartComponent},
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]

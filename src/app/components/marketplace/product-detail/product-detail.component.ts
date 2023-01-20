@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { CartService } from 'src/app/services/network-calls/cart.service';
 import { ProductsApiService } from 'src/app/services/network-calls/products-api.service';
+import { Product } from '../products-listing/products-listing.component';
 
 
 @Component({
@@ -11,6 +12,12 @@ import { ProductsApiService } from 'src/app/services/network-calls/products-api.
 })
 export class ProductDetailComponent implements OnInit{
   productDetails: any;
+
+  addToCart(productDetails: Product) {
+    this.cartService.addToCart(this.productDetails);
+    window.alert('You product has been added to cart');
+    
+  }
 
   constructor(
     private productApiService: ProductsApiService,
@@ -33,7 +40,4 @@ ngOnInit() {
     })
   }
 
-  addToCart() {
-    this.cartService.addToCart(this.productDetails);
-  }
 }

@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ProductsApiService {
-
+  
   constructor(
     private http: HttpClient
   ) { }

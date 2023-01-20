@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CartService } from 'src/app/services/network-calls/cart.service';
+
 
 @Component({
   selector: 'app-header',
@@ -6,8 +8,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  items = this.cartService.getItems();
 
-  constructor() { }
+  constructor(public cartService: CartService) { }
 
   ngOnInit(): void {
   }
