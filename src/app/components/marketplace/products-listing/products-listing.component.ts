@@ -10,17 +10,17 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ProductsListingComponent implements OnInit {
   allProducts = [];
-  
+
 
   constructor(
     private route: ActivatedRoute,
-    
+
     private productApiService: ProductsApiService
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     this.getProduct();
-    
+
   }
   public getProduct() {
     this.productApiService.getProducts().subscribe((res: any) => {
@@ -28,7 +28,7 @@ export class ProductsListingComponent implements OnInit {
       console.log(res.products)
     })
   }
-  
+
 
 }
 export interface Product {

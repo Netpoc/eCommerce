@@ -81,7 +81,7 @@
                     
                 </div>
                 <div class="col-lg-4">
-                    <div class="border p-md-4 cart-totals ml-30">
+                    <div class="border p-md-4 cart-totals ml-30" *ngIf="items">
                         <div class="table-responsive">
                             <table class="table no-border">
                                 <th></th>
@@ -91,7 +91,7 @@
                                             <h6 class="text-muted">Subtotal</h6>
                                         </td>
                                         <td class="cart_total_amount">
-                                            <h4 class="text-brand text-end">N12.31</h4>
+                                            <h4 class="text-brand text-end">{{calculateTotal()}}</h4>
                                         </td>
                                     </tr>
                                     <tr>
@@ -99,22 +99,7 @@
                                             <div class="divider-2 mt-10 mb-10"></div>
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <td class="cart_total_label">
-                                            <h6 class="text-muted">Shipping</h6>
-                                        </td>
-                                        <td class="cart_total_amount">
-                                            <h5 class="text-heading text-end">Free</h5></td> </tr> <tr>
-                                        <td class="cart_total_label">
-                                            <h6 class="text-muted">Estimate for</h6>
-                                        </td>
-                                        <td class="cart_total_amount">
-                                            <h5 class="text-heading text-end">United Kingdom</h5>
-                                        </td> </tr> <tr>
-                                        <td colspan="2">
-                                            <div class="divider-2 mt-10 mb-10"></div>
-                                        </td>
-                                    </tr>
+                                    
                                     <tr>
                                         <td class="cart_total_label">
                                             <h6 class="text-muted">Total</h6>

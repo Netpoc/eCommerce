@@ -50,11 +50,11 @@
                                     <ul *ngFor="let item of items">
                                         <li>
                                             <div class="shopping-cart-img">
-                                                <a href="shop-product-right.html"><img alt="Nest" src="assets/images/shop/thumbnail-3.jpg" /></a>
+                                                <a [routerLink]="['/products', item?.id]"><img alt="Nest" [src]="item?.thumbnail" /></a>
                                             </div>
                                             <div class="shopping-cart-title">
-                                                <h4><a [routerLink]="['product/', item?.id]">{{item.title}}</a></h4>
-                                                <h4><span>1 × </span>N{{item.price}}</h4>
+                                                <h4><a [routerLink]="['/products', item?.id]">{{item.title}}</a></h4>
+                                                <h4><span>{{item.qty}} x </span>N{{item.price}}</h4>
                                             </div>
                                             <div class="shopping-cart-delete">
                                                 <a href="#"><i class="fi-rs-cross-small"></i></a>

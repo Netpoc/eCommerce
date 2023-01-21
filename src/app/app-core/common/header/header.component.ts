@@ -9,8 +9,12 @@ import { CartService } from 'src/app/services/network-calls/cart.service';
 })
 export class HeaderComponent implements OnInit {
   items = this.cartService.getItems();
+ 
 
-  constructor(public cartService: CartService) { }
+  constructor(
+    public cartService: CartService,
+   
+    ) { }
 
   ngOnInit(): void {
   }
