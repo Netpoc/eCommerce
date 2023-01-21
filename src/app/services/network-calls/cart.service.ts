@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+
 import { Product } from 'src/app/components/marketplace/products-listing/products-listing.component';
 
 @Injectable({
@@ -8,16 +8,17 @@ import { Product } from 'src/app/components/marketplace/products-listing/product
 export class CartService {
   items: Product[] = [];
 
-
-  public get numberOfItems(): number {
+  
+  public get numberOfItems() : number {
     return this.items.length;
   }
 
+
   constructor(
-    private http: HttpClient
+    
   ) { }
 
-  addToCart(product: Product) {
+  addToCart(product: Product){
     this.items.push(product);
   }
 
@@ -30,8 +31,8 @@ export class CartService {
     return this.items;
   }
 
-  removeFromCart(product: any) {
+  removeFromCart(product: any){
     this.items.pop();
   }
-
+  
 }

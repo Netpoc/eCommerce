@@ -34,3 +34,10 @@ export class CartComponent {
     ){}
     
 }
+export interface Product {
+    id: number;
+    title: string;
+    price: number;
+    description: string;
+    qty: number;
+  }
