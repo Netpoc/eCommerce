@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { CartService } from 'src/app/services/network-calls/cart.service';
 import { ProductsApiService } from 'src/app/services/network-calls/products-api.service';
@@ -11,12 +11,20 @@ import { Product } from '../products-listing/products-listing.component';
   styleUrls: ['./product-detail.component.scss']
 })
 export class ProductDetailComponent implements OnInit{
-  productDetails: any;
+  @Input() productDetails: any;
+  items = this.cartService.getItems();
 
-  addToCart(productDetails: Product) {
-    this.cartService.addToCart(this.productDetails);
-    window.alert('You product has been added to cart');
+  addToCart(product: any) {
     
+    const itemExist = this.items.find(({id}) => id === product.id);
+    if(!itemExist) {
+      
+      this.items.push({...product, qty: 1});
+      return;
+    }
+    itemExist.qty +=1;
+    console.log(itemExist)
+       
   }
 
   constructor(
@@ -36,7 +44,6 @@ ngOnInit() {
   private getProductsDetails(id: Number) {
     this.productApiService.getProductsDetails(id).subscribe((res: any) => {
       this.productDetails = res;
-      console.log(res);
     })
   }
 
